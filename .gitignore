@@ -1,0 +1,18 @@
+# Virtual environments
+ds_env/
+venv/
+env/
+
+# Python & Jupyter cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+
+# IDEs & Secrets
+.vscode/
+.idea/
+.env
