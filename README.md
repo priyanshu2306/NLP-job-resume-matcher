@@ -1,8 +1,12 @@
 # 🎯 NLP Job & Resume Matcher
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://nlp-job-resume-matcher.streamlit.app/)
+
+**🚀 Live Demo:** [https://nlp-job-resume-matcher.streamlit.app/](https://nlp-job-resume-matcher.streamlit.app/)
+
 An interactive Natural Language Processing (NLP) job recommendation and skill-gap analysis dashboard built with **Python**, **Streamlit**, and **Scikit-Learn**. 
 
-Trained and indexed on a curated **Glassdoor Data Science job postings dataset** (660+ roles), this application is specifically tailored to evaluate candidate resumes against **Data Science, Data Analytics, and Machine Learning** positions.
+Trained and indexed on a curated **Glassdoor Data Science job postings dataset** (660+ roles), this application evaluates candidate resumes against **Data Science, Data Analytics, and Machine Learning** positions.
 
 ## 🧠 How It Works
 1. **Text Preprocessing & Vectorization**: Cleans raw resume text and transforms it into numerical feature vectors using a pre-fitted **TF-IDF Vectorizer** trained on industry job descriptions.
@@ -15,13 +19,14 @@ Trained and indexed on a curated **Glassdoor Data Science job postings dataset**
 - **Market Fit & Compensation Analytics**: Displays executive KPIs (Top Match Confidence, Average Matched Salary) alongside a horizontal compensation bar chart and a rank-indexed data table.
 - **Skill-Gap Diagnostics**: Scans resumes against core data science competencies (`Python`, `SQL`, `AWS`, `Spark`, `Hadoop`, `Tableau`, `Excel`, `Big Data`) to highlight matched strengths and missing skills per role.
 
+## 🛠️ Tech Stack
+- **Frontend & Deployment:** Streamlit, Streamlit Community Cloud
+- **NLP & Machine Learning:** Scikit-Learn (`TfidfVectorizer`, `cosine_similarity`)
+- **Data Processing & Parsing:** Pandas, `pypdf`, Regex
 
-## Run Locally
-1. Install dependencies:
+## 🚀 Run Locally
+1. Clone the repository and install dependencies:
    ```bash
+   git clone https://github.com/priyanshu2306/NLP-job-resume-matcher.git
+   cd NLP-job-resume-matcher
    pip install -r requirements.txt
-   ```
-2. Launch the dashboard:
-   ```bash
-   streamlit run app.py
-   ```
